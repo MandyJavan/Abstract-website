@@ -6,16 +6,17 @@
 
 body {
   overflow-x: hidden;
+  position: relative;
 }
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 20px 80px;
 }
 #headerLeft {
   width: 290px;
-  /* background-color: antiquewhite; */
 }
 
 #headerLeft svg:hover {
@@ -130,7 +131,8 @@ main {
 }
 
 #search {
-  width: 50%;
+  width: 70%;
+  max-width: 700px;
   border: 1px solid black;
   display: flex;
   justify-content: start;
@@ -218,7 +220,6 @@ input[type="search"]::placeholder {
 }
 
 footer {
-    position: relative;
     padding: 50px 100px;
     height: 400px;
 }
@@ -256,7 +257,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
+    position: fixed;
     bottom: 15px;
     right: 20px;
     border: none;
@@ -288,4 +289,56 @@ footer {
     #hamburger {
         display: block;
     }
+}
+
+@media screen and (max-width: 1024px) {
+
+  footer {
+    flex-wrap: wrap;
+    height: 90%;
+    row-gap: 50px;
+  }
+
+  .footerColumn {
+    width: 50%;
+  }
+
+  .lastColumn {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 770px) {
+
+  header {
+    padding: 20px 15px;
+  }
+
+  #searchSection h1 {
+    font-size: 60px;
+  }
+
+  #search {
+    width: 90%;
+  }
+
+  #itemSection {
+    flex-direction: column;
+    align-items: start;
+    padding: 100px 20px 100px 80px;
+  }
+
+  .items {
+    width: 90%;
+  }
+  .itemExplanation {
+    width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 520px) {
+  #searchSection h1 {
+    font-size: 40px;
+  }
 }
