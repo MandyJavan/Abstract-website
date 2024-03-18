@@ -366,3 +366,23 @@ footer {
     font-size: 40px;
   }
 }
+
+@media screen and (max-width: 480px) {
+  #headerLeft {
+  width: 240px;
+}
+  #headerLeft svg {
+    width: 110px
+  }
+  #headerLeft a {
+    font-size: 18px  
+  }
+  
+  #itemSection {
+    padding: 80px 10px;
+  }
+  
+  footer {
+    padding: 80px 15px;
+  }
+}

@@ -22,13 +22,6 @@ hamburger.addEventListener("click", ()=> {
 })
 
 searchIcon.addEventListener( 'click', ()=> {
-    // search_isClicked = !search_isClicked;
-    // if(search_isClicked){
-    //     headerLeft.style.display = "none"
-    //     headerRight.style.display = "none"
-    //     hiddenSearch.style.display = "flex"
-    //     header.classList.toggle('bg-white')
-    // }
     headerLeft.style.display = "none"
     headerRight.style.display = "none"
     hiddenSearch.style.display = "flex"
